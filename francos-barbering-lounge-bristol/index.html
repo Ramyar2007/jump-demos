@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Franco's Barbering Lounge | Men's Barber, Gloucester Road, Bristol</title>
+<meta name="description" content="Expert men's hair, styling and grooming on Gloucester Road, Bristol. Nearly 40 years of barbering. Book online or call 0117 944 6265.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14110f;--paper:#f3ece0;--cream:#e8dfcd;--brass:#b8863b;--red:#8c2a22;--muted:#6b6358}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Barlow,system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.05;letter-spacing:-.01em}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.concept{background:var(--ink);color:#d9cfbd;font-size:13px;text-align:center;padding:7px 14px;border-bottom:1px solid #3a322a}
+.concept b{color:var(--brass);font-weight:600}
+header{position:sticky;top:0;z-index:10;background:rgba(243,236,224,.96);backdrop-filter:blur(6px);border-bottom:1px solid #d8ccb5}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.logo{font-family:Fraunces,serif;font-weight:600;font-size:21px;text-decoration:none;white-space:nowrap}
+.logo i{color:var(--red)}
+nav{display:none;gap:26px;font-weight:500;font-size:15px}
+nav a{text-decoration:none}nav a:hover{color:var(--red)}
+.btn{display:inline-block;background:var(--red);color:#fff;padding:12px 22px;text-decoration:none;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;border:2px solid var(--red);transition:.2s}
+.btn:hover{background:var(--ink);border-color:var(--ink)}
+.btn.ghost{background:transparent;color:inherit;border-color:currentColor}
+.btn.ghost:hover{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.hbtns{display:flex;gap:8px;align-items:center}
+.hbtns .tel{font-weight:600;text-decoration:none;font-size:15px;display:none}
+.hero{background:var(--ink);color:var(--paper);padding:72px 0 80px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent 0 22px,rgba(184,134,59,.07) 22px 44px)}
+.hero .wrap{position:relative}
+.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:13px;color:var(--brass);font-weight:600;margin-bottom:22px}
+.hero h1{font-size:clamp(44px,10vw,112px);max-width:11em}
+.hero h1 em{color:var(--brass);font-weight:400}
+.hero p{max-width:34em;margin:26px 0 34px;font-size:19px;color:#d9cfbd}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 36px;margin-top:54px;padding-top:26px;border-top:1px solid #3a322a;font-size:15px;color:#bfb4a0}
+.facts b{color:var(--paper);font-family:Fraunces,serif;font-size:20px;display:block;font-weight:600}
+section{padding:84px 0}
+h2{font-size:clamp(34px,6vw,60px);margin-bottom:18px}
+.lead{max-width:36em;color:var(--muted);font-size:19px}
+.svc{display:grid;gap:0;margin-top:44px;border-top:2px solid var(--ink)}
+.svc div{padding:22px 0;border-bottom:1px solid #cbbfa7;display:grid;gap:4px}
+.svc h3{font-size:26px}
+.svc p{color:var(--muted)}
+.note{margin-top:26px;font-size:15px;color:var(--muted)}
+.dark{background:var(--cream)}
+.quote{font-family:Fraunces,serif;font-style:italic;font-size:clamp(24px,4vw,40px);line-height:1.25;max-width:24em}
+.quote+p{margin-top:18px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:14px;color:var(--red)}
+.two{display:grid;gap:44px}
+.hours{width:100%;border-collapse:collapse;font-size:18px}
+.hours td{padding:11px 0;border-bottom:1px solid #cbbfa7}
+.hours td:last-child{text-align:right;font-weight:500}
+.hours .closed td:last-child{color:var(--muted)}
+.hours tr.today td{color:var(--red);font-weight:600}
+address{font-style:normal;font-size:20px;margin:14px 0 22px}
+.contact{background:var(--ink);color:var(--paper)}
+.contact .lead{color:#bfb4a0}
+.contact a.big{font-family:Fraunces,serif;font-size:clamp(30px,7vw,64px);text-decoration:none;color:var(--brass);display:block;margin:20px 0 6px}
+footer{background:#0c0a09;color:#9a907f;padding:34px 0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:14px 28px;justify-content:space-between}
+footer a{margin-right:16px}
+@media(min-width:820px){
+nav{display:flex}.hbtns .tel{display:inline}
+.two{grid-template-columns:1fr 1fr;gap:80px}
+.svc{grid-template-columns:1fr 1fr;column-gap:64px}
+.hero{padding:120px 0 110px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="concept">Concept redesign by <b>Jump</b>, not the official Franco's Barbering Lounge website.</div>
+<header>
+<div class="wrap bar">
+<a class="logo" href="#top">Franco's <i>Barbering Lounge</i></a>
+<nav aria-label="Main"><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#visit">Hours</a><a href="#contact">Contact</a><a href="https://francos-barbering-lounge.square.site/">Shop</a></nav>
+<div class="hbtns"><a class="tel" href="tel:01179446265">0117 944 6265</a><a class="btn" href="https://francosbarberinglounge.mylocalsalon.com/OnlineBooking">Book</a></div>
+</div>
+</header>
+<main id="top">
+<div class="hero">
+<div class="wrap">
+<p class="eyebrow">Gloucester Road · Bristol · BS7</p>
+<h1>Men's hair, <em>done properly</em> for nearly 40 years.</h1>
+<p>Expert cutting, styling and grooming from fully qualified stylists, in an independent lounge on Gloucester Road.</p>
+<div class="cta"><a class="btn" href="https://francosbarberinglounge.mylocalsalon.com/OnlineBooking">Book online</a><a class="btn ghost" href="tel:01179446265">Call 0117 944 6265</a></div>
+<div class="facts">
+<div><b>Nearly 40 yrs</b>in business</div>
+<div><b>Fully qualified</b>employed stylists</div>
+<div><b>Tue – Sat</b>closed Mon &amp; Sun</div>
+</div>
+</div>
+</div>
+
+<section id="services">
+<div class="wrap">
+<p class="eyebrow" style="color:var(--red)">What we do</p>
+<h2>Cut, colour &amp; care.</h2>
+<p class="lead">From a sharp everyday cut to a full change of look, every service starts with a proper consultation.</p>
+<div class="svc">
+<div><h3>Precision cutting</h3><p>Traditional and modern barbering, cut to suit you.</p></div>
+<div><h3>Beard grooming</h3><p>Shaped, tidied and kept in line.</p></div>
+<div><h3>Hair transformations</h3><p>A fresh direction, planned with you.</p></div>
+<div><h3>Colour &amp; grey blending</h3><p>Grey coverage, men's colour and highlights.</p></div>
+<div><h3>Perms &amp; texture</h3><p>Texture services for curls and waves.</p></div>
+<div><h3>Wedding styling</h3><p>Looking right for the big day.</p></div>
+<div><h3>Hair loss advice</h3><p>Honest guidance, plus transplant aftercare.</p></div>
+</div>
+<p class="note">Prices aren't listed publicly. Ask when you book or call the lounge on 0117 944 6265.</p>
+</div>
+</section>
+
+<section id="reviews" class="dark">
+<div class="wrap">
+<p class="eyebrow" style="color:var(--red)">What customers say</p>
+<blockquote class="quote">“Great service and consultation. Would recommend for those with curly hair, as the barbers really have a knowledge on how each type/pattern works…”</blockquote>
+<p>Otis · July 2026</p>
+</div>
+</section>
+
+<section id="visit">
+<div class="wrap two">
+<div>
+<p class="eyebrow" style="color:var(--red)">Visit</p>
+<h2>31 Gloucester Road.</h2>
+<address>Franco's Barbering Lounge<br>31 Gloucester Road<br>Bristol BS7 8AA</address>
+<div class="cta"><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Franco%27s+Barbering+Lounge+31+Gloucester+Road+Bristol+BS7+8AA">Get directions</a></div>
+</div>
+<table class="hours" aria-label="Opening hours" id="hours">
+<tr class="closed" data-d="1"><td>Monday</td><td>Closed</td></tr>
+<tr data-d="2"><td>Tuesday</td><td>9:00am – 7:00pm</td></tr>
+<tr data-d="3"><td>Wednesday</td><td>9:30am – 7:00pm</td></tr>
+<tr data-d="4"><td>Thursday</td><td>9:00am – 8:00pm</td></tr>
+<tr data-d="5"><td>Friday</td><td>7:30am – 7:00pm</td></tr>
+<tr data-d="6"><td>Saturday</td><td>8:00am – 6:00pm</td></tr>
+<tr class="closed" data-d="0"><td>Sunday</td><td>Closed</td></tr>
+</table>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="wrap">
+<p class="eyebrow">Book your chair</p>
+<h2>Ready for a fresh cut?</h2>
+<p class="lead">Book online in a minute, or ring the lounge.</p>
+<a class="big" href="tel:01179446265">0117 944 6265</a>
+<a href="mailto:info@bristolbarber.com" style="color:#d9cfbd">info@bristolbarber.com</a>
+<div class="cta" style="margin-top:30px"><a class="btn" href="https://francosbarberinglounge.mylocalsalon.com/OnlineBooking">Book online</a><a class="btn ghost" href="https://francos-barbering-lounge.square.site/">Online shop</a></div>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<div>© Franco's Barbering Lounge · 31 Gloucester Road, Bristol BS7 8AA</div>
+<div><a href="http://instagram.com/bristolbarber">Instagram</a><a href="http://www.facebook.com/pages/Barbering-at-Francos/387567287929709">Facebook</a><a href="http://twitter.com/bristolbarber">Twitter</a></div>
+<div>Concept design by Jump, not the official website.</div>
+</div>
+</footer>
+<script>
+var t=document.querySelector('#hours tr[data-d="'+new Date().getDay()+'"]');if(t)t.classList.add('today');
+</script>
+</body>
+</html>
