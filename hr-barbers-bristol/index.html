@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>H&amp;R Barbers, Filton Avenue, Bristol | Skin fades, beards, traditional shaves</title>
+<meta name="description" content="H&amp;R Barbers on Filton Avenue, Bristol. Skin fades, classic cuts, beard sculpting and traditional shaves. Book online or call 0117 969 9290.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#121110;--bone:#f1ece2;--red:#a8231f;--mute:#6b645a;--line:#d8d1c3}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Barlow,system-ui,sans-serif;background:var(--bone);color:var(--ink);line-height:1.55;font-size:17px}
+a{color:inherit}
+.bar{background:var(--ink);color:#cfc8ba;font-size:13px;text-align:center;padding:7px 12px;letter-spacing:.02em}
+.bar b{color:#fff;font-weight:600}
+header{position:sticky;top:0;z-index:10;background:var(--bone);border-bottom:2px solid var(--ink);display:flex;align-items:center;justify-content:space-between;padding:10px 20px}
+.logo{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:28px;letter-spacing:.04em;text-decoration:none;text-transform:uppercase}
+.logo span{color:var(--red)}
+nav{display:none;gap:28px;font-weight:500}
+nav a{text-decoration:none}
+nav a:hover{color:var(--red)}
+.btns{display:flex;gap:8px}
+.btn{font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:17px;text-decoration:none;padding:10px 18px;border:2px solid var(--ink);display:inline-block;min-height:44px;line-height:1.4}
+.btn.solid{background:var(--ink);color:var(--bone)}
+.btn.red{background:var(--red);border-color:var(--red);color:#fff}
+.btn:hover{transform:translateY(-1px)}
+.btn.call{display:none}
+.hero{padding:48px 20px 56px;max-width:1240px;margin:auto}
+.kicker{font-family:'Barlow Condensed',sans-serif;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--red);font-size:16px}
+h1{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(64px,19vw,200px);line-height:.88;letter-spacing:-.01em;margin:12px 0 24px}
+.hero p.lead{max-width:34em;font-size:19px;color:#2b2824}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.strip{background:var(--ink);color:var(--bone);overflow:hidden}
+.strip ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:6px 34px;padding:16px 20px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:20px;letter-spacing:.12em;text-transform:uppercase}
+.strip li::before{content:"✂ ";color:var(--red)}
+section{padding:64px 20px;max-width:1240px;margin:auto}
+h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(40px,8vw,76px);line-height:.95;margin-bottom:28px}
+.svc{display:grid;gap:0;border-top:2px solid var(--ink)}
+.svc article{display:grid;gap:6px;padding:24px 0;border-bottom:1px solid var(--line)}
+.svc h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:34px;text-transform:uppercase;line-height:1}
+.svc p{color:#3a362f;max-width:34em}
+.note{margin-top:22px;color:var(--mute);font-size:15px}
+.split{display:grid;gap:36px}
+.why ol{list-style:none;counter-reset:n}
+.why li{counter-increment:n;display:grid;grid-template-columns:54px 1fr;padding:18px 0;border-bottom:1px solid var(--line)}
+.why li::before{content:"0" counter(n);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:30px;color:var(--red);line-height:1.1}
+.why strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:24px;text-transform:uppercase;letter-spacing:.03em}
+.visit{background:var(--ink);color:var(--bone);max-width:none}
+.visit .in{max-width:1240px;margin:auto;display:grid;gap:36px}
+.visit h2{color:var(--bone)}
+.visit address{font-style:normal;font-size:22px;line-height:1.4;margin-bottom:20px}
+.visit dl{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;margin-bottom:24px}
+.visit dt{color:#a79f90;text-transform:uppercase;font-family:'Barlow Condensed',sans-serif;letter-spacing:.12em;font-size:16px;padding-top:2px}
+.visit a{text-underline-offset:3px}
+.visit .btn{border-color:var(--bone)}
+.visit .btn.red{border-color:var(--red)}
+.hours{border:2px solid #3a362f;padding:26px}
+.hours h3{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;font-size:28px;margin-bottom:8px}
+.hours p{color:#cfc8ba}
+footer{padding:28px 20px 90px;max-width:1240px;margin:auto;display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;font-size:14px;color:var(--mute)}
+footer a{margin-right:14px}
+.sticky{position:fixed;left:0;right:0;bottom:0;display:grid;grid-template-columns:1fr 1fr;z-index:20}
+.sticky a{text-align:center;border-width:2px 0 0;padding:14px}
+.sticky .btn{border-color:var(--ink)}
+a:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+@media(min-width:820px){
+ body{font-size:18px}
+ nav{display:flex}
+ header{padding:12px 40px}
+ .btn.call{display:inline-block}
+ .hero{padding:80px 40px 90px}
+ section{padding:96px 40px}
+ .svc article{grid-template-columns:1fr 1.2fr;align-items:baseline;gap:30px}
+ .split{grid-template-columns:1fr 1fr;gap:80px}
+ .visit .in{grid-template-columns:1.1fr .9fr;gap:80px}
+ .sticky{display:none}
+ footer{padding:32px 40px}
+}
+</style>
+</head>
+<body>
+<div class="bar"><b>Concept redesign by Jump</b>, not the official H&amp;R Barbers website.</div>
+
+<header>
+  <a class="logo" href="#top" aria-label="H&R Barbers home">H<span>&amp;</span>R Barbers</a>
+  <nav aria-label="Main"><a href="#services">Services</a><a href="#why">The shop</a><a href="#visit">Find us</a></nav>
+  <div class="btns"><a class="btn call" href="tel:01179699290">0117 969 9290</a><a class="btn red" href="https://hrbarber.com/book/">Book</a></div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <p class="kicker">Barbers · Filton Avenue, Bristol</p>
+  <h1>Sharp cuts.<br>Clean lines.</h1>
+  <p class="lead">Skin fades, classic cuts, beard sculpting and traditional shaves, done with precision and care in a clean, modern shop. Booking takes under 30 seconds and confirms instantly.</p>
+  <div class="cta">
+    <a class="btn red" href="https://hrbarber.com/book/">Book your chair</a>
+    <a class="btn solid" href="tel:01179699290">Call 0117 969 9290</a>
+  </div>
+</div>
+
+<div class="strip"><ul><li>Skin fades</li><li>Classic cuts</li><li>Beard sculpting</li><li>Traditional shaves</li></ul></div>
+
+<section id="services">
+  <h2>What we do</h2>
+  <div class="svc">
+    <article><h3>Skin fades &amp; classic cuts</h3><p>From a crisp skin fade to a timeless scissor cut, finished with attention to every edge.</p></article>
+    <article><h3>Beard sculpting</h3><p>Shaped, tidied and balanced to suit your face, so it looks deliberate every day.</p></article>
+    <article><h3>Traditional shaves</h3><p>A proper, careful shave with professional-grade equipment and products.</p></article>
+  </div>
+  <p class="note">Prices: <a href="https://hrbarber.com/book/">see them when you book</a> or ask on 0117 969 9290.</p>
+  <div class="cta"><a class="btn red" href="https://hrbarber.com/book/">Book online</a></div>
+</section>
+
+<section id="why" class="why">
+  <div class="split">
+    <h2>Why come to H&amp;R</h2>
+    <ol>
+      <li><div><strong>Experienced barbers</strong>Expert execution and meticulous attention to detail on every cut.</div></li>
+      <li><div><strong>Quality kit and products</strong>High-quality equipment and professional grooming products.</div></li>
+      <li><div><strong>Clean, modern shop</strong>A sophisticated but welcoming room with friendly service.</div></li>
+      <li><div><strong>Easy booking</strong>Three simple steps online, instant confirmation.</div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="in">
+    <div>
+      <h2>Find the shop</h2>
+      <address>H&amp;R Barbers<br>526 Filton Avenue<br>Bristol BS7 0QE</address>
+      <dl>
+        <dt>Phone</dt><dd><a href="tel:01179699290">0117 969 9290</a></dd>
+        <dt>Email</dt><dd><a href="mailto:hr.barbers.contact@gmail.com">hr.barbers.contact@gmail.com</a></dd>
+        <dt>Social</dt><dd><a href="https://www.instagram.com/barbers.hr/">Instagram</a> · <a href="https://www.facebook.com/bristolbarbers">Facebook</a></dd>
+      </dl>
+      <div class="cta">
+        <a class="btn red" href="https://hrbarber.com/book/">Book online</a>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=526+Filton+Avenue+Bristol+BS7+0QE">Get directions</a>
+      </div>
+    </div>
+    <div class="hours">
+      <h3>Opening hours</h3>
+      <p>Hours to be confirmed by the shop. Available times show live when you book online.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <span>H&amp;R Barbers, 526 Filton Avenue, Bristol BS7 0QE</span>
+  <span><a href="https://www.instagram.com/barbers.hr/">Instagram</a><a href="https://www.facebook.com/bristolbarbers">Facebook</a></span>
+  <span>Concept by <a href="https://jumpagency.org">Jump</a>. Not the official site.</span>
+</footer>
+
+<div class="sticky"><a class="btn solid" href="tel:01179699290">Call</a><a class="btn red" href="https://hrbarber.com/book/">Book</a></div>
+</body>
+</html>
