@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Melyas Nails and Beauty — Sulaymaniyah (concept)</title>
+<meta name="description" content="Concept website for Melyas Nails and Beauty, Bakhtiyari main street, Sulaymaniyah. Nails, lashes, Hydrafacial, hair.">
+<meta name="theme-color" content="#f3e3dc">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blush:#f3e3dc; --cream:#fbf5f1; --nude:#e3c4b6; --rose:#b9776a; --ink:#3a2622; --muted:#7a625b; --gold:#a9824a; --gold-l:#d9bd8a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:"Vazirmatn","Jost",system-ui,sans-serif;line-height:1.75;font-size:16px;-webkit-text-size-adjust:100%}
+html[lang="en"] body{font-family:"Jost","Vazirmatn",system-ui,sans-serif;line-height:1.65}
+.serif{font-family:"Cormorant Garamond","Vazirmatn",Georgia,serif}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+
+.demo{background:var(--ink);color:#f1e2d6;font-size:12.5px;text-align:center;padding:7px 14px;line-height:1.5}
+
+header.bar{position:sticky;top:0;z-index:20;background:rgba(251,245,241,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--nude)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;height:58px}
+.logo{font-family:"Cormorant Garamond",Georgia,serif;font-size:22px;font-weight:600;letter-spacing:.04em;text-decoration:none;white-space:nowrap}
+.logo i{color:var(--gold);font-style:italic}
+.bar nav{display:none;gap:22px;font-size:14px}
+.bar nav a{text-decoration:none;color:var(--muted)}
+.bar nav a:hover{color:var(--ink)}
+.bar .act{display:flex;gap:8px;align-items:center}
+.lang{border:1px solid var(--gold);background:transparent;color:var(--ink);font:inherit;font-size:13px;padding:5px 12px;border-radius:99px;cursor:pointer}
+.call{background:var(--ink);color:#fff;text-decoration:none;font-size:14px;font-weight:500;padding:8px 16px;border-radius:99px;white-space:nowrap}
+@media(max-width:419px){.logo{font-size:19px;letter-spacing:.01em}.call{padding:8px 12px;font-size:13px}.lang{padding:5px 9px}.bar .wrap{gap:6px}}
+@media(min-width:820px){.bar nav{display:flex}}
+
+.hero{background:var(--blush);padding:64px 0 72px;border-bottom:1px solid var(--nude)}
+.hero .kick{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:500}
+html[dir=rtl] .hero .kick{letter-spacing:0;font-size:14px}
+.hero h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:clamp(46px,12vw,112px);line-height:.98;margin:14px 0 6px;letter-spacing:-.01em}
+.hero h1 em{color:var(--rose);font-weight:500}
+.hero .sub{font-size:clamp(17px,2.4vw,21px);max-width:34ch;color:var(--muted);margin:18px 0 30px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;text-decoration:none;padding:14px 26px;border-radius:99px;font-weight:500;font-size:16px;border:1px solid var(--ink)}
+.btn.p{background:var(--ink);color:#fff}
+.btn.s{background:transparent}
+.hero .meta{margin-top:34px;display:flex;flex-wrap:wrap;gap:8px 26px;font-size:14px;color:var(--muted)}
+.hero .meta b{color:var(--ink);font-weight:500}
+
+section{padding:68px 0}
+.eyebrow{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:500}
+html[dir=rtl] .eyebrow{letter-spacing:0;font-size:14px}
+h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:clamp(34px,6vw,54px);line-height:1.1;margin:6px 0 30px}
+html[dir=rtl] h2{font-family:"Vazirmatn",serif;font-weight:700;line-height:1.35}
+
+.svc{list-style:none;border-top:1px solid var(--nude)}
+.svc li{display:grid;grid-template-columns:54px 1fr;gap:6px 14px;padding:26px 0;border-bottom:1px solid var(--nude);align-items:baseline}
+.svc .n{font-family:"Cormorant Garamond",Georgia,serif;font-size:30px;color:var(--gold);font-style:italic}
+.svc h3{font-family:"Cormorant Garamond",Georgia,serif;font-size:30px;font-weight:600;line-height:1.2}
+html[dir=rtl] .svc h3{font-family:"Vazirmatn",sans-serif;font-size:23px;font-weight:700}
+.svc p{grid-column:2;color:var(--muted);max-width:52ch}
+@media(min-width:820px){
+  .svc li{grid-template-columns:80px 300px 1fr;align-items:baseline}
+  .svc p{grid-column:3}
+}
+
+.gal{background:var(--blush)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media(min-width:820px){.grid{grid-template-columns:repeat(4,1fr);gap:16px}}
+.ph{aspect-ratio:4/5;border:1px dashed var(--rose);border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:12px;background:repeating-linear-gradient(135deg,rgba(255,255,255,.35) 0 10px,rgba(255,255,255,.12) 10px 20px);color:var(--muted);font-size:13px;gap:4px}
+.ph b{font-family:"Cormorant Garamond",Georgia,serif;font-size:24px;color:var(--ink);font-weight:600}
+html[dir=rtl] .ph b{font-family:"Vazirmatn",sans-serif;font-size:18px}
+.galnote{margin-top:18px;font-size:14px;color:var(--muted);max-width:60ch}
+.ig{margin-top:26px}
+
+.prices{max-width:640px}
+.row{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--nude);align-items:baseline}
+.row span:first-child{font-weight:500}
+.tbc{font-size:13px;color:var(--rose);border:1px solid var(--nude);border-radius:99px;padding:2px 12px;white-space:nowrap}
+.pnote{margin-top:18px;color:var(--muted);font-size:14px}
+
+.loc{background:var(--ink);color:#f5e9e0}
+.loc h2{color:#fff}
+.loc .eyebrow{color:var(--gold-l)}
+.loc .two{display:grid;gap:34px}
+@media(min-width:820px){.loc .two{grid-template-columns:1fr 1fr}}
+.loc dl dt{font-size:13px;color:var(--gold-l);margin-top:18px}
+.loc dl dd{font-size:19px}
+.loc dd a{text-decoration:none;border-bottom:1px solid var(--gold)}
+.loc .btn{border-color:var(--gold-l);color:#fff;margin-top:6px}
+.loc .btn.p{background:var(--gold-l);color:var(--ink)}
+.unk{color:#cdb7aa;font-size:15px}
+
+footer{padding:34px 0 90px;font-size:13px;color:var(--muted);text-align:center;background:var(--cream)}
+footer p{max-width:60ch;margin:6px auto}
+.dock{position:fixed;inset-inline:0;bottom:0;z-index:30;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(251,245,241,.96);border-top:1px solid var(--nude);display:flex;gap:10px}
+.dock a{flex:1;text-align:center;text-decoration:none;padding:13px;border-radius:99px;font-weight:500;font-size:15px}
+.dock .c{background:var(--ink);color:#fff}
+.dock .w{border:1px solid var(--ink)}
+@media(min-width:820px){.dock{display:none}footer{padding-bottom:34px}}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<div class="demo" data-ck="ئەمە وێبسایتێکی نموونەییە لەلایەن Jump، نەک وێبسایتی فەرمیی Melyas Nails and Beauty." data-en="Concept website by Jump, not the official Melyas Nails and Beauty website.">ئەمە وێبسایتێکی نموونەییە لەلایەن Jump، نەک وێبسایتی فەرمیی Melyas Nails and Beauty.</div>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="#top" dir="ltr">Melyas <i>Nails &amp; Beauty</i></a>
+    <nav>
+      <a href="#services" data-ck="خزمەتگوزارییەکان" data-en="Services">خزمەتگوزارییەکان</a>
+      <a href="#gallery" data-ck="گاڵەری" data-en="Gallery">گاڵەری</a>
+      <a href="#prices" data-ck="نرخەکان" data-en="Prices">نرخەکان</a>
+      <a href="#visit" data-ck="شوێن و پەیوەندی" data-en="Visit &amp; contact">شوێن و پەیوەندی</a>
+    </nav>
+    <div class="act">
+      <button class="lang" id="lang" type="button" aria-label="Switch language">EN</button>
+      <a class="call" href="tel:07709918060" data-ck="پەیوەندی بکە" data-en="Call to book">پەیوەندی بکە</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <p class="kick" data-ck="سلێمانی · شەقامی بەختیاری" data-en="Sulaymaniyah · Bakhtiyari main street">سلێمانی · شەقامی بەختیاری</p>
+    <h1 dir="ltr">Melyas<br><em>Nails &amp; Beauty</em></h1>
+    <p class="sub" data-ck="نینۆک، برژانگ، هایدرافەیشیال و قژ — لە یەک شوێندا." data-en="Nails, lashes, Hydrafacial and hair — all in one place.">نینۆک، برژانگ، هایدرافەیشیال و قژ — لە یەک شوێندا.</p>
+    <div class="btns">
+      <a class="btn p" href="tel:07709918060" data-ck="کات بگرە بە پەیوەندی: 07709918060" data-en="Book by phone: 07709918060">کات بگرە بە پەیوەندی: 07709918060</a>
+      <a class="btn s" href="https://www.instagram.com/melyas_beauty/" target="_blank" rel="noopener" data-ck="کارەکانمان لە ئینستاگرام" data-en="See our work on Instagram">کارەکانمان لە ئینستاگرام</a>
+    </div>
+    <p class="meta">
+      <span><b dir="ltr">28.4K</b> <span data-ck="شوێنکەوتووی ئینستاگرام" data-en="Instagram followers">شوێنکەوتووی ئینستاگرام</span></span>
+      <span data-ck="پۆستی نوێ بە نزیکەیی ڕۆژانە" data-en="New posts almost every day">پۆستی نوێ بە نزیکەیی ڕۆژانە</span>
+    </p>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <p class="eyebrow" data-ck="خزمەتگوزارییەکان" data-en="Services">خزمەتگوزارییەکان</p>
+    <h2 data-ck="چوار بوار، یەک سالۆن" data-en="Four specialities, one salon">چوار بوار، یەک سالۆن</h2>
+    <ul class="svc">
+      <li><span class="n">01</span><h3 data-ck="نینۆک" data-en="Nails">نینۆک</h3><p data-ck="دیزاین و ڕازاندنەوەی نینۆک — نموونەی کارەکان لە ئینستاگرامدا ببینە." data-en="Nail design and finishing — see examples of the work on Instagram.">دیزاین و ڕازاندنەوەی نینۆک — نموونەی کارەکان لە ئینستاگرامدا ببینە.</p></li>
+      <li><span class="n">02</span><h3 data-ck="برژانگ" data-en="Lashes">برژانگ</h3><p data-ck="خزمەتگوزاری برژانگ بۆ ئەو چاوانەی دەتەوێت جوانتر دیار بن." data-en="Lash services to frame the eyes.">خزمەتگوزاری برژانگ بۆ ئەو چاوانەی دەتەوێت جوانتر دیار بن.</p></li>
+      <li><span class="n">03</span><h3 dir="ltr">Hydrafacial</h3><p data-ck="چارەسەری نوێی پێست و ڕووخسار." data-en="A modern facial treatment for the skin.">چارەسەری نوێی پێست و ڕووخسار.</p></li>
+      <li><span class="n">04</span><h3 data-ck="قژ" data-en="Hair">قژ</h3><p data-ck="خزمەتگوزاری قژ. بۆ زانینی وردەکاری، پەیوەندی بکە." data-en="Hair services. Call for the details.">خزمەتگوزاری قژ. بۆ زانینی وردەکاری، پەیوەندی بکە.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section id="gallery" class="gal">
+  <div class="wrap">
+    <p class="eyebrow" data-ck="گاڵەری" data-en="Gallery">گاڵەری</p>
+    <h2 data-ck="کارەکان" data-en="The work">کارەکان</h2>
+    <div class="grid" role="list">
+      <div class="ph" role="listitem"><b data-ck="نینۆک" data-en="Nails">نینۆک</b><span data-ck="شوێنی وێنە — وێنەی ڕاستەقینە دوای دابینکردن" data-en="Photo placeholder — real photo to be supplied">شوێنی وێنە — وێنەی ڕاستەقینە دوای دابینکردن</span></div>
+      <div class="ph" role="listitem"><b data-ck="برژانگ" data-en="Lashes">برژانگ</b><span data-ck="شوێنی وێنە — وێنەی ڕاستەقینە دوای دابینکردن" data-en="Photo placeholder — real photo to be supplied">شوێنی وێنە — وێنەی ڕاستەقینە دوای دابینکردن</span></div>
+      <div class="ph" role="listitem"><b dir="ltr">Hydrafacial</b><span data-ck="شوێنی وێنە — وێنەی ڕاستەقینە دوای دابینکردن" data-en="Photo placeholder — real photo to be supplied">شوێنی وێنە — وێنەی ڕاستەقینە دوای دابینکردن</span></div>
+      <div class="ph" role="listitem"><b data-ck="قژ" data-en="Hair">قژ</b><span data-ck="شوێنی وێنە — وێنەی ڕاستەقینە دوای دابینکردن" data-en="Photo placeholder — real photo to be supplied">شوێنی وێنە — وێنەی ڕاستەقینە دوای دابینکردن</span></div>
+    </div>
+    <p class="galnote" data-ck="ئەم چوارگۆشانە تەنها شوێنی دانانی وێنەن. لە وێبسایتی کۆتاییدا وێنەی خودی سالۆن یان بەشی ئینستاگرام دادەنرێت." data-en="These frames only hold the place for photos. On the final site the salon's own photos, or a live Instagram feed, would go here.">ئەم چوارگۆشانە تەنها شوێنی دانانی وێنەن. لە وێبسایتی کۆتاییدا وێنەی خودی سالۆن یان بەشی ئینستاگرام دادەنرێت.</p>
+    <p class="ig"><a class="btn p" href="https://www.instagram.com/melyas_beauty/" target="_blank" rel="noopener" data-ck="بڕۆ بۆ @melyas_beauty" data-en="Open @melyas_beauty on Instagram">بڕۆ بۆ @melyas_beauty</a></p>
+  </div>
+</section>
+
+<section id="prices">
+  <div class="wrap prices">
+    <p class="eyebrow" data-ck="نرخەکان" data-en="Prices">نرخەکان</p>
+    <h2 data-ck="لیستی نرخ" data-en="Price list">لیستی نرخ</h2>
+    <div class="row"><span data-ck="نینۆک" data-en="Nails">نینۆک</span><span class="tbc" data-ck="نرخ لەلایەن سالۆنەوە دیاری دەکرێت" data-en="to be confirmed by the salon">نرخ لەلایەن سالۆنەوە دیاری دەکرێت</span></div>
+    <div class="row"><span data-ck="برژانگ" data-en="Lashes">برژانگ</span><span class="tbc" data-ck="نرخ لەلایەن سالۆنەوە دیاری دەکرێت" data-en="to be confirmed by the salon">نرخ لەلایەن سالۆنەوە دیاری دەکرێت</span></div>
+    <div class="row"><span dir="ltr">Hydrafacial</span><span class="tbc" data-ck="نرخ لەلایەن سالۆنەوە دیاری دەکرێت" data-en="to be confirmed by the salon">نرخ لەلایەن سالۆنەوە دیاری دەکرێت</span></div>
+    <div class="row"><span data-ck="قژ" data-en="Hair">قژ</span><span class="tbc" data-ck="نرخ لەلایەن سالۆنەوە دیاری دەکرێت" data-en="to be confirmed by the salon">نرخ لەلایەن سالۆنەوە دیاری دەکرێت</span></div>
+    <p class="pnote" data-ck="هیچ نرخێک لێرە نەنووسراوە چونکە سالۆن هێشتا نرخەکانی پشتڕاست نەکردووەتەوە. نرخەکان بە دیناری عێراقی دەنووسرێن." data-en="No prices are shown because the salon has not confirmed them yet. Prices would be listed in Iraqi dinars (IQD).">هیچ نرخێک لێرە نەنووسراوە چونکە سالۆن هێشتا نرخەکانی پشتڕاست نەکردووەتەوە. نرخەکان بە دیناری عێراقی دەنووسرێن.</p>
+  </div>
+</section>
+
+<section id="visit" class="loc">
+  <div class="wrap two">
+    <div>
+      <p class="eyebrow" data-ck="شوێن و پەیوەندی" data-en="Visit &amp; contact">شوێن و پەیوەندی</p>
+      <h2 data-ck="کات بگرە" data-en="Book your visit">کات بگرە</h2>
+      <p style="max-width:34ch;color:#e6d4c8" data-ck="بۆ گرتنی کات، ڕاستەوخۆ پەیوەندی بکە یان پەیام بنێرە." data-en="To book, call us directly or send a message.">بۆ گرتنی کات، ڕاستەوخۆ پەیوەندی بکە یان پەیام بنێرە.</p>
+      <div class="btns" style="margin-top:22px">
+        <a class="btn p" href="tel:07709918060" data-ck="پەیوەندی بکە" data-en="Call now">پەیوەندی بکە</a>
+        <a class="btn" href="https://wa.me/9647709918060" target="_blank" rel="noopener" data-ck="پەیام بنێرە لە واتسئاپ" data-en="Message on WhatsApp">پەیام بنێرە لە واتسئاپ</a>
+      </div>
+      <p class="unk" style="margin-top:12px" data-ck="ژمارەی واتسئاپ پشتڕاست نەکراوەتەوە؛ هەمان ژمارەی تەلەفۆن بەکارهاتووە." data-en="WhatsApp on this number is to be confirmed; it uses the same published phone number.">ژمارەی واتسئاپ پشتڕاست نەکراوەتەوە؛ هەمان ژمارەی تەلەفۆن بەکارهاتووە.</p>
+    </div>
+    <dl>
+      <dt data-ck="ناونیشان" data-en="Address">ناونیشان</dt>
+      <dd data-ck="شەقامی سەرەکیی بەختیاری، سلێمانی" data-en="Bakhtiyari main street, Sulaymaniyah">شەقامی سەرەکیی بەختیاری، سلێمانی</dd>
+      <dt data-ck="تەلەفۆن" data-en="Phone">تەلەفۆن</dt>
+      <dd dir="ltr" style="text-align:start"><a href="tel:07709918060">0770 991 8060</a></dd>
+      <dt>Instagram</dt>
+      <dd dir="ltr" style="text-align:start"><a href="https://www.instagram.com/melyas_beauty/" target="_blank" rel="noopener">@melyas_beauty</a></dd>
+      <dt data-ck="کاتی کارکردن" data-en="Opening hours">کاتی کارکردن</dt>
+      <dd class="unk" data-ck="هێشتا پشتڕاست نەکراوەتەوە" data-en="To be confirmed">هێشتا پشتڕاست نەکراوەتەوە</dd>
+      <dt data-ck="نەخشە" data-en="Map">نەخشە</dt>
+      <dd><a href="https://www.google.com/maps/search/?api=1&amp;query=Melyas+Nails+and+Beauty+Sulaymaniyah" target="_blank" rel="noopener" data-ck="کردنەوە لە Google Maps" data-en="Open in Google Maps">کردنەوە لە Google Maps</a></dd>
+    </dl>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><button class="lang" id="lang2" type="button">EN</button></p>
+    <p data-ck="ئەمە تەنها نموونەیەکی دیزاینە کە Jump (jumpagency.org) دروستی کردووە. وێبسایتی فەرمیی Melyas Nails and Beauty نییە و هیچ زانیارییەکی تێدا لەلایەن سالۆنەوە پەسەند نەکراوە." data-en="This is a design concept made by Jump (jumpagency.org). It is not the official Melyas Nails and Beauty website and nothing on it has been approved by the salon.">ئەمە تەنها نموونەیەکی دیزاینە کە Jump (jumpagency.org) دروستی کردووە. وێبسایتی فەرمیی Melyas Nails and Beauty نییە و هیچ زانیارییەکی تێدا لەلایەن سالۆنەوە پەسەند نەکراوە.</p>
+  </div>
+</footer>
+
+<div class="dock">
+  <a class="c" href="tel:07709918060" data-ck="پەیوەندی بکە بۆ کات گرتن" data-en="Call to book">پەیوەندی بکە بۆ کات گرتن</a>
+  <a class="w" href="https://www.instagram.com/melyas_beauty/" target="_blank" rel="noopener">Instagram</a>
+</div>
+
+<script>
+(function(){
+  var cur='ckb',els=document.querySelectorAll('[data-ck]');
+  function apply(l){
+    cur=l;
+    var h=document.documentElement;
+    h.lang=l==='ckb'?'ckb':'en';
+    h.dir=l==='ckb'?'rtl':'ltr';
+    els.forEach(function(e){e.innerHTML=e.getAttribute(l==='ckb'?'data-ck':'data-en');});
+    var label=l==='ckb'?'EN':'کوردی';
+    document.getElementById('lang').textContent=label;
+    document.getElementById('lang2').textContent=label;
+    try{localStorage.setItem('melyas-lang',l)}catch(e){}
+  }
+  function toggle(){apply(cur==='ckb'?'en':'ckb')}
+  document.getElementById('lang').addEventListener('click',toggle);
+  document.getElementById('lang2').addEventListener('click',toggle);
+  try{var s=localStorage.getItem('melyas-lang');if(s==='en')apply('en');}catch(e){}
+})();
+</script>
+</body>
+</html>
