@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sami Beauty Center — سامی بیوتی سەنتەر | Sulaymaniyah</title>
+<meta name="description" content="Sami Beauty Center, Sulaymaniyah: lashes, nails, makeup, head spa and hair. Concept website by Jump.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Vazirmatn:wght@400;500;700;800&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#fbf5ee; --sand:#f3e7da; --rose:#b5546a; --rose-d:#7d2f45; --ink:#3a1c26; --gold:#b8935a; --line:#e6d3c3; --white:#fffdfa;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:"Vazirmatn","Jost",sans-serif;line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased}
+html[lang=en] body{font-family:"Jost","Vazirmatn",sans-serif;line-height:1.65}
+html[lang=ckb] .en{display:none!important}
+html[lang=en] .ku{display:none!important}
+a{color:inherit}
+.serif{font-family:"Cormorant Garamond","Vazirmatn",serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+.demo{background:var(--ink);color:#f1e3d3;font-size:13px;text-align:center;padding:7px 14px}
+.bar{position:sticky;top:0;z-index:20;background:rgba(251,245,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;height:58px}
+.brand{font-family:"Cormorant Garamond",serif;font-size:21px;font-weight:600;letter-spacing:.02em;text-decoration:none;white-space:nowrap}
+.bar-r{display:flex;align-items:center;gap:8px}
+.lang{border:1px solid var(--gold);background:transparent;color:var(--ink);font:inherit;font-size:13px;padding:5px 12px;border-radius:99px;cursor:pointer}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--rose-d);color:#fff;text-decoration:none;font-weight:500;padding:11px 22px;border-radius:99px;border:0;font-size:15px;transition:background .2s}
+.btn:hover{background:var(--rose)}
+.btn.sm{padding:7px 16px;font-size:14px}
+.btn.ghost{background:transparent;color:var(--rose-d);border:1.5px solid var(--rose-d)}
+.btn.ghost:hover{background:var(--rose-d);color:#fff}
+
+.hero{padding:64px 0 56px;border-bottom:1px solid var(--line)}
+.eyebrow{color:var(--gold);letter-spacing:.18em;font-size:13px;text-transform:uppercase;font-weight:500}
+html[lang=ckb] .eyebrow{letter-spacing:0;font-size:14px}
+h1{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:clamp(46px,12vw,104px);line-height:1;margin:14px 0 18px;color:var(--rose-d)}
+html[lang=ckb] h1{font-family:"Vazirmatn",sans-serif;font-weight:800;line-height:1.25;font-size:clamp(40px,10vw,84px)}
+.lead{max-width:34em;font-size:18px;color:#5b3a45}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:34px;font-size:14px;color:#6b4a55}
+.facts span::before{content:"✦";color:var(--gold);margin-inline-end:8px}
+
+section{padding:62px 0;border-bottom:1px solid var(--line)}
+h2{font-family:"Cormorant Garamond",serif;font-size:clamp(32px,6vw,48px);font-weight:600;color:var(--rose-d);line-height:1.15;margin-bottom:10px}
+html[lang=ckb] h2{font-family:"Vazirmatn",sans-serif;font-weight:700;font-size:clamp(28px,5vw,38px);line-height:1.4}
+.sub{color:#6b4a55;max-width:36em;margin-bottom:30px}
+
+.svc{list-style:none;counter-reset:s}
+.svc li{counter-increment:s;display:flex;align-items:baseline;gap:18px;padding:20px 0;border-top:1px solid var(--line)}
+.svc li:last-child{border-bottom:1px solid var(--line)}
+.svc li::before{content:counter(s,decimal-leading-zero);font-family:"Cormorant Garamond",serif;color:var(--gold);font-size:22px;min-width:34px}
+.svc b{font-family:"Cormorant Garamond",serif;font-size:30px;font-weight:600;display:block;line-height:1.2}
+html[lang=ckb] .svc b{font-family:"Vazirmatn",sans-serif;font-size:22px;font-weight:700}
+.svc small{color:#6b4a55;font-size:14px}
+
+.team{display:grid;gap:16px;grid-template-columns:1fr}
+.card{background:var(--white);border:1px solid var(--line);border-radius:26px;padding:26px 24px;display:flex;flex-direction:column;gap:6px}
+.card .role{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:30px;color:var(--rose-d);line-height:1.2}
+html[lang=ckb] .card .role{font-family:"Vazirmatn",sans-serif;font-style:normal;font-weight:700;font-size:22px}
+.card p{font-size:14px;color:#6b4a55}
+.tbc{display:inline-block;font-size:12px;color:var(--gold);border:1px dashed var(--gold);border-radius:99px;padding:2px 12px;align-self:flex-start;margin-top:6px}
+.card .btn{margin-top:12px;align-self:flex-start}
+
+.ig{background:var(--sand);border-radius:30px;padding:40px 26px;text-align:center}
+.ig .big{font-family:"Cormorant Garamond",serif;font-size:clamp(54px,14vw,96px);color:var(--rose-d);line-height:1}
+.ig p{margin:8px 0 22px;color:#5b3a45}
+
+.price{border:1.5px dashed var(--gold);border-radius:26px;padding:30px 24px;background:var(--white)}
+.price p{max-width:34em}
+
+.info{display:grid;gap:14px}
+.row{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.row span:first-child{color:#6b4a55}
+.row b{font-weight:500}
+
+.phones{display:grid;gap:14px;margin-top:8px}
+.phone{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--rose-d);color:#fff;text-decoration:none;border-radius:24px;padding:20px 24px}
+.phone:hover{background:var(--rose)}
+.phone .num{font-family:"Jost",sans-serif;font-size:26px;letter-spacing:.04em;direction:ltr;unicode-bidi:isolate}
+.phone small{opacity:.85}
+
+footer{padding:36px 0 90px;font-size:14px;color:#6b4a55}
+footer .wrap{display:flex;flex-direction:column;gap:12px}
+.note{background:var(--sand);border-radius:16px;padding:14px 18px}
+
+.sticky-call{display:none}
+@media (max-width:640px){
+  .brand{font-size:18px}
+  .bar .btn.sm .full{display:none}
+  .sticky-call{display:flex;position:fixed;inset-inline:14px;bottom:14px;z-index:30;box-shadow:0 8px 24px rgba(58,28,38,.25)}
+}
+@media (min-width:700px){
+  .team{grid-template-columns:repeat(2,1fr)}
+  .phones{grid-template-columns:repeat(2,1fr)}
+  .hero{padding:104px 0 90px}
+  section{padding:84px 0}
+}
+@media (min-width:1000px){.team{grid-template-columns:repeat(4,1fr)}}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<div class="demo">
+  <span class="en">Concept website by Jump, not the official Sami Beauty Center website.</span>
+  <span class="ku">ماڵپەڕی نموونەیی لەلایەن Jump، ماڵپەڕی فەرمیی Sami Beauty Center نییە.</span>
+</div>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top">Sami Beauty Center</a>
+    <div class="bar-r">
+      <button class="lang" id="lang" type="button" aria-label="Switch language / گۆڕینی زمان">
+        <span class="ku">EN</span><span class="en">کوردی</span>
+      </button>
+      <a class="btn sm" href="tel:07761521294">
+        <span class="ku">پەیوەندی بکە</span><span class="en">Call to book</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow"><span class="en">Sulaymaniyah · Beauty centre</span><span class="ku">سلێمانی · سەنتەری جوانکاری</span></p>
+    <h1><span class="en">Sami<br>Beauty Center</span><span class="ku">سامی بیوتی سەنتەر</span></h1>
+    <p class="lead">
+      <span class="en">Lashes, nails, makeup, head spa and hair, each with its own specialist, all under one roof.</span>
+      <span class="ku">برژانگ، نینۆک، میکئەپ، هێد سپا و قژ، هەریەکەیان لەلایەن پسپۆڕێکی تایبەت، هەموو لە یەک شوێن.</span>
+    </p>
+    <div class="cta">
+      <a class="btn" href="tel:07761521294"><span class="en">Call to book an appointment</span><span class="ku">پەیوەندی بکە بۆ وەرگرتنی کات</span></a>
+      <a class="btn ghost" href="https://www.instagram.com/sami.salon_/" target="_blank" rel="noopener" dir="ltr">Instagram @sami.salon_</a>
+    </div>
+    <div class="facts">
+      <span><span class="en">19.1K followers on Instagram</span><span class="ku">١٩.١ هەزار شوێنکەوتوو لە ئینستاگرام</span></span>
+      <span><span class="en">Five specialists tagged on Instagram</span><span class="ku">پێنج پسپۆڕ لە ئینستاگرام تاگ کراون</span></span>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2><span class="en">Services</span><span class="ku">خزمەتگوزارییەکان</span></h2>
+    <p class="sub"><span class="en">What the centre shows on its Instagram page.</span><span class="ku">ئەوەی سەنتەرەکە لە پەیجی ئینستاگرامەکەی پیشانی دەدات.</span></p>
+    <ul class="svc">
+      <li><div><b><span class="en">Lashes</span><span class="ku">برژانگ</span></b></div></li>
+      <li><div><b><span class="en">Nails</span><span class="ku">نینۆک</span></b></div></li>
+      <li><div><b><span class="en">Makeup</span><span class="ku">میکئەپ</span></b></div></li>
+      <li><div><b><span class="en">Head spa</span><span class="ku">هێد سپا</span></b></div></li>
+      <li><div><b><span class="en">Hair</span><span class="ku">قژ</span></b></div></li>
+    </ul>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap">
+    <h2><span class="en">Meet the team</span><span class="ku">ناسینی تیم</span></h2>
+    <p class="sub"><span class="en">Each specialist has their own Instagram page where their work is shown. Here they sit together in one place.</span><span class="ku">هەر پسپۆڕێک پەیجی ئینستاگرامی تایبەتی خۆی هەیە بۆ پیشاندانی کارەکانی. لێرە هەموویان لە یەک شوێن کۆکراونەتەوە.</span></p>
+    <div class="team">
+      <article class="card">
+        <h3 class="role"><span class="en">Lashes</span><span class="ku">برژانگ</span></h3>
+        <p><span class="en">Lash specialist</span><span class="ku">پسپۆڕی برژانگ</span></p>
+        <span class="tbc"><span class="en">Name &amp; page link: to be added by the salon</span><span class="ku">ناو و لینک: سەنتەرەکە زیادی دەکات</span></span>
+        <a class="btn ghost sm" href="https://www.instagram.com/sami.salon_/" target="_blank" rel="noopener"><span class="en">See on Instagram</span><span class="ku">لە ئینستاگرام ببینە</span></a>
+      </article>
+      <article class="card">
+        <h3 class="role"><span class="en">Nails</span><span class="ku">نینۆک</span></h3>
+        <p><span class="en">Nail specialist</span><span class="ku">پسپۆڕی نینۆک</span></p>
+        <span class="tbc"><span class="en">Name &amp; page link: to be added by the salon</span><span class="ku">ناو و لینک: سەنتەرەکە زیادی دەکات</span></span>
+        <a class="btn ghost sm" href="https://www.instagram.com/sami.salon_/" target="_blank" rel="noopener"><span class="en">See on Instagram</span><span class="ku">لە ئینستاگرام ببینە</span></a>
+      </article>
+      <article class="card">
+        <h3 class="role"><span class="en">Makeup</span><span class="ku">میکئەپ</span></h3>
+        <p><span class="en">Makeup artist</span><span class="ku">میکئەپ ئارتیست</span></p>
+        <span class="tbc"><span class="en">Name &amp; page link: to be added by the salon</span><span class="ku">ناو و لینک: سەنتەرەکە زیادی دەکات</span></span>
+        <a class="btn ghost sm" href="https://www.instagram.com/sami.salon_/" target="_blank" rel="noopener"><span class="en">See on Instagram</span><span class="ku">لە ئینستاگرام ببینە</span></a>
+      </article>
+      <article class="card">
+        <h3 class="role"><span class="en">Head spa</span><span class="ku">هێد سپا</span></h3>
+        <p><span class="en">Head spa specialist</span><span class="ku">پسپۆڕی هێد سپا</span></p>
+        <span class="tbc"><span class="en">Name &amp; page link: to be added by the salon</span><span class="ku">ناو و لینک: سەنتەرەکە زیادی دەکات</span></span>
+        <a class="btn ghost sm" href="https://www.instagram.com/sami.salon_/" target="_blank" rel="noopener"><span class="en">See on Instagram</span><span class="ku">لە ئینستاگرام ببینە</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="ig">
+      <div class="big">19.1K</div>
+      <p><span class="en">people already follow the work on Instagram. See the latest results there.</span><span class="ku">شوێنکەوتوو کارەکان دەکەن لە ئینستاگرام. نوێترین ئەنجامەکان لەوێ ببینە.</span></p>
+      <a class="btn" href="https://www.instagram.com/sami.salon_/" target="_blank" rel="noopener" dir="ltr">@sami.salon_</a>
+    </div>
+  </div>
+</section>
+
+<section id="prices">
+  <div class="wrap">
+    <h2><span class="en">Prices</span><span class="ku">نرخەکان</span></h2>
+    <div class="price">
+      <p><span class="en">Price list to be confirmed by the salon. Until then, call for a price before you book.</span><span class="ku">لیستی نرخەکان سەنتەرەکە دیاری دەکات. تا ئەو کاتە، پێش وەرگرتنی کات پەیوەندی بکە و نرخ بپرسە.</span></p>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <h2><span class="en">Find us</span><span class="ku">شوێنەکەمان</span></h2>
+    <div class="info">
+      <div class="row"><span><span class="en">City</span><span class="ku">شار</span></span><b><span class="en">Sulaymaniyah, Kurdistan Region</span><span class="ku">سلێمانی، هەرێمی کوردستان</span></b></div>
+      <div class="row"><span><span class="en">Street address</span><span class="ku">ناونیشان</span></span><b><span class="en">To be added by the salon</span><span class="ku">سەنتەرەکە زیادی دەکات</span></b></div>
+      <div class="row"><span><span class="en">Opening hours</span><span class="ku">کاتی کارکردن</span></span><b><span class="en">To be confirmed</span><span class="ku">دیاری ناکراوە</span></b></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2><span class="en">Book by phone</span><span class="ku">کات وەربگرە بە تەلەفۆن</span></h2>
+    <p class="sub"><span class="en">Tap a number to call.</span><span class="ku">لەسەر ژمارەیەک دابگرە بۆ پەیوەندی.</span></p>
+    <div class="phones">
+      <a class="phone" href="tel:07761521294"><span class="num">0776 152 1294</span><small><span class="en">Call</span><span class="ku">پەیوەندی</span></small></a>
+      <a class="phone" href="tel:07710160002"><span class="num">0771 016 0002</span><small><span class="en">Call</span><span class="ku">پەیوەندی</span></small></a>
+    </div>
+    <p style="margin-top:22px"><a href="https://www.instagram.com/sami.salon_/" target="_blank" rel="noopener" dir="ltr">Instagram: @sami.salon_</a></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="note">
+      <span class="en">This is a concept website made by Jump to show what a single home for Sami Beauty Center could look like. It is not the official website. Items marked "to be confirmed" are for the salon to fill in.</span>
+      <span class="ku">ئەمە ماڵپەڕێکی نموونەییە کە Jump دروستی کردووە بۆ پیشاندانی ئەوەی ماڵپەڕی Sami Beauty Center چۆن دەبێت. ماڵپەڕی فەرمی نییە. ئەو بەشانەی نووسراوە "دیاری ناکراوە" سەنتەرەکە خۆی پڕیان دەکاتەوە.</span>
+    </div>
+    <div>© Sami Beauty Center · <a href="https://jumpagency.org" target="_blank" rel="noopener">Jump</a></div>
+  </div>
+</footer>
+
+<a class="btn sticky-call" href="tel:07761521294"><span class="en">Call to book an appointment</span><span class="ku">پەیوەندی بکە بۆ وەرگرتنی کات</span></a>
+
+<script>
+(function(){
+  var h=document.documentElement;
+  function set(l){h.lang=l;h.dir=l==='en'?'ltr':'rtl';try{localStorage.setItem('sbc-lang',l)}catch(e){}}
+  try{var s=localStorage.getItem('sbc-lang');if(s)set(s)}catch(e){}
+  document.getElementById('lang').addEventListener('click',function(){set(h.lang==='en'?'ckb':'en')});
+})();
+</script>
+</body>
+</html>
